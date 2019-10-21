@@ -1,0 +1,8 @@
+# We'll just use in-memory database
+
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/crud_todo_test?useSSL=false&createDatabaseIfNotExist=true
+#  jpa:
+#    hibernate:
+#      ddl-auto: create

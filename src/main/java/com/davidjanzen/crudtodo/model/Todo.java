@@ -13,7 +13,10 @@ public class Todo {
     @Column(nullable = false)
     private String title;
 
-    private boolean isCompleted;
+    private boolean completed;
+
+    public Todo() {
+    }
 
     public Todo(String title) {
         this.title = title;
@@ -32,7 +35,24 @@ public class Todo {
         return title;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public boolean isCompleted() {
-        return isCompleted;
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
+
+    @Override
+    public String toString() {
+        return "Todo{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", completed=" + completed +
+                '}';
     }
 }
